@@ -4,16 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Survey page 2</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 <body>
-    <h1>Survey page 1</h1>
-    <p><a href="./surveyOne.html">Take the survey</a></p>
-    <p>
-        <button onclick="window.location.href='./surveyTwo.html';">
+    <h1>Survey page 2</h1>
+
+    <form>
+        <div>
+            <label for="yes"> 1. Have you ever heard of fantasy sports?
+                <input type="radio" id="yes" name="yesorno" value="yes" required autofocus> Yes </label>
+            <label for="no">
+                <input type="radio" id="no" name="yesorno" value="no"> No </label>
+        </div>
+
+        <div>
+            <label for="basketball"> 2. If yes, what sports have you participated in before?
+                <input type="checkbox" id="basketball" name="activities" value ="basketball"> Basketball
+            </label>    
+            <label for="football">
+                <input type="checkbox" id="football" name="activities" value="football"> Football
+            </label>
+            <label for="baseball">
+                <input type="checkbox" id="baseball" name="activities" value="baseball"> Baseball
+            </label>
+            <label for="hockey">
+                <input type="checkbox" id="hockey" name="activities" value="hockey"> Hockey
+            </label>
+              
+        </div>
+        
+        <div>
+            <label for="years"> 3. How much experience do you have with fantasy?
+            <select name="time" id="years" required>
+                <option value="0">0 years</option>
+                <option value="1">1 year</option>
+                <option value="2">2 years</option>
+                <option value="3">3 years</option>
+                <option value="4">4 years</option>
+                <option value="5+">5 years</option>
+            </select>
+            </label>
+
+        </div>
+    
+        
+        <div></div>
+        <label for="description"> 4. If you have done fantasy, describe your overall experience
+            <input id="description" type="text" required>
+        <div></div>
+   
+    </form>
+    <button onclick="window.location.href='./thankYou.html';"> 
         Submit survey
-        </button>
-    </p>
+    </button>
     <p>page 2 of 2</p>
 </body>
 </html>
